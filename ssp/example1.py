@@ -8,7 +8,7 @@ def main():
 
     # Build the Grover circuit and print it
     qc = solver.solve(iterations=1)
-    print(qc.draw())
+    print(qc.draw('mpl'))
 
     # Simulate:
     meas = Results(qc, shots=10**5)
